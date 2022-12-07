@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Nhap tuoi em</label>
+<input id="tuoiem" type="text"> <br>
+<button onclick="tuoi()">tinh tuoi</button>
+<h3 id="tuoianh">tuoi anh la</h3>
+<h3 id="tuoibo">tuoi bo la</h3>
+<script>
+
+    function tuoi() {
+
+        let tuoiEm = +document.getElementById('tuoiem').value
+
+        let tuoiAnh = tuoiEm + 3
+        let tuoiBo = tuoiAnh * 6
+        document.getElementById('tuoianh').innerText = tuoiAnh
+        document.getElementById('tuoibo').innerText = tuoiBo
+    }
+</script>
+
+
+</body>
+</html>
